@@ -1,0 +1,104 @@
+@media (prefers-color-scheme: light) {
+
+    /* box */
+    .NUI-box-header {
+        background-color: #FFFFFFaa;
+        color: #000;
+    }
+
+    .NUI-box-page {
+        background-color: #55ffff55;
+    }
+
+    /* control */
+    .NUI-control-headerButton {
+        color: #000;
+    }
+
+    .NUI-control-headerButton:hover {
+        color: #aaa;
+    }
+
+    .NUI-control-headerButton:active {
+        color: #555;
+    }
+
+    .NUI-control-range[type="range"] {
+        background: #ccc;
+    }
+
+    .NUI-control-range[type="range"]::-webkit-slider-thumb {
+        background-color: #0DD;
+        border: #fff 5px solid;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+
+    /* box */
+    .NUI-box-header {
+        background-color: #000000AA;
+        color: #FFF;
+    }
+
+    .NUI-box-page {
+        background-color: #22f1f144;
+    }
+
+    /* control */
+    .NUI-control-headerButton {
+        color: #0ff;
+    }
+
+    .NUI-control-headerButton:hover {
+        color: #fff;
+    }
+
+    .NUI-control-headerButton:active {
+        color: #aaa;
+    }
+
+    .NUI-control-range[type="range"] {
+        background: #aaa;
+    }
+
+    .NUI-control-range[type="range"]::-webkit-slider-thumb {
+        background-color: #0FF;
+        border: #555 5px solid;
+    }
+}
+
+@media (prefers-color-scheme: no-preference) {
+
+    /* box */
+    .NUI-box-header {
+        background-color: #000000AA;
+        color: #FFF;
+    }
+
+    .NUI-box-page {
+        background-color: #22f1f144;
+    }
+
+    /* control */
+    .NUI-control-headerButton {
+        color: #0ff;
+    }
+
+    .NUI-control-headerButton:hover {
+        color: #fff;
+    }
+
+    .NUI-control-headerButton:active {
+        color: #aaa;
+    }
+
+    .NUI-control-range[type="range"] {
+        background: #aaa;
+    }
+
+    .NUI-control-range[type="range"]::-webkit-slider-thumb {
+        background-color: #0FF;
+        border: #555 5px solid;
+    }
+}
