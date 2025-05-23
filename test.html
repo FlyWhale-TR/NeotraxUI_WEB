@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="/NeotraxUI-Box.css">
     <link rel="stylesheet" href="/NeotraxUI-Control.css">
     <link rel="stylesheet" href="/NeotraxUI-AutoColorMode.css">
+    <script src="NeotraxUI-Control.js"></script>
     <script src="NeotraxUI-AutoColorMode.js"></script>
     <title>NeotraxUI-Test</title>
     <style>
@@ -18,7 +19,7 @@
         }
 
         body {
-            background: linear-gradient(rgba(0, 0, 0, 0.2)), url('bg.jpg') center/cover no-repeat;
+            background: linear-gradient(rgba(0, 0, 0, 0.2)), url('bg.png') center/cover no-repeat;
             transition: all 0.3s;
             -webkit-transition: all 0.3s;
             -moz-transition: all 0.3s;
@@ -28,19 +29,19 @@
 
         @media (prefers-color-scheme: light) {
             body {
-                background: linear-gradient(rgba(0, 0, 0, 0)), url('bg.jpg') center/cover no-repeat;
+                background: linear-gradient(rgba(0, 0, 0, 0)), url('bg.png') center/cover no-repeat;
             }
         }
 
         @media (prefers-color-scheme: dark) {
             body {
-                background: linear-gradient(rgba(0, 0, 0, 0.2)), url('bg.jpg') center/cover no-repeat;
+                background: linear-gradient(rgba(0, 0, 0, 0.2)), url('bg.png') center/cover no-repeat;
             }
         }
 
         @media (prefers-color-scheme: no-preference) {
             body {
-                background: linear-gradient(rgba(0, 0, 0, 0.2)), url('bg.jpg') center/cover no-repeat;
+                background: linear-gradient(rgba(0, 0, 0, 0.2)), url('bg.png') center/cover no-repeat;
             }
         }
     </style>
@@ -56,22 +57,29 @@
         <button class="NUI-control-headerButton">按钮</button>
     </header>
     <div class="NUI-tool-avold"></div>
-    <div class="NUI-box-page">
+    <div class="NUI-box-page NUI-animation-page">
         <button class="NUI-control-button NUI-control-button-moveUpwards NUI-control-button-spring">按钮</button>
         <button class="NUI-control-button NUI-control-button-moveUpwards NUI-control-button-spring">按钮</button>
     </div>
-    <div class="NUI-box-page">
-        <input type="range" class="NUI-control-input-range" max="5" value="0">
-        <div style="outline: 1px solid #f00">
+    <div class="NUI-box-page NUI-animation-page">
+        <span style="color: #fff;font-weight: bold;">经典样式</span>
+        <input type="range" class="NUI-control-input-range" max="1" value="0">
+        <span style="color: #fff;font-weight: bold;">Neotrax样式</span>
+        <div class="NUI-control-input-slider_background" id="NUI-slider" data-length="6" style=" width: 100%;">
+            <div class="NUI-control-input-slider_track" id="NUI-track"></div>
+            <div class="NUI-control-input-slider_thumb" id="NUI-thumb"></div>
+        </div>
+    </div>
+    <div class="NUI-box-page NUI-animation-page">
+        <!-- <div style="outline: 1px solid #f00">
             <input type="text" class="NUI-control-input-text-havebutton" style="width: 500px;">
             <button class="NUI-control-input-text-button"></button>
-        </div>
+        </div> -->
     </div>
     <footer class="NUI-box-footer">
         <div>飞鲸™版权所有</div>
         <div>© 2025 FlyWhale</div>
     </footer>
-    <script src="NeotraxUI-Control.js"></script>
 </body>
 
 </html>
